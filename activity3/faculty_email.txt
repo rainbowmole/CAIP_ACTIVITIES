@@ -1,0 +1,6 @@
+Subject: URGENT: Update Student Portal Access  
+Please ensure all student accounts are migrated to the new authentication system by Friday, July 5th.  
+Also, remind students about the password reset policy.  
+Let me know by Thursday if any issues arise.
+Regards,  
+Prof. Santos
