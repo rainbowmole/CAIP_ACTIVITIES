@@ -1,0 +1,11 @@
+Student Submission: Data Cleaning Assignment
+
+Name: Elena Cruz
+Course: CAIP 101
+Date: April 25, 2026
+
+I imported the dataset into Python and removed duplicate records using the pandas drop_duplicates function. I then handled missing values in two ways: numerical columns were filled with median values, and categorical columns were filled with the most common label. After cleaning, I standardized column names to lowercase with underscores to make downstream processing easier.
+
+For validation, I compared row counts before and after cleaning, reviewed null-value summaries, and checked data types for consistency. The most difficult issue was mixed formatting in the date field. I solved that by converting all entries to a single YYYY-MM-DD format.
+
+Final result: 1,248 clean rows ready for analysis, with a short script that reproduces the process end to end.

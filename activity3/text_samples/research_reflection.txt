@@ -1,0 +1,15 @@
+Research Reflection: AI Assistance in Academic Work
+
+Working with AI tools improved my speed in drafting and summarizing technical material, but it also revealed how easy it is to accept outputs without enough verification. During this week, I used AI to generate starter code, rewrite documentation, and propose test cases.
+
+What worked well:
+- Rapid brainstorming for algorithm options
+- Clear first drafts for reports
+- Fast generation of edge-case ideas
+
+What did not work well:
+- Occasional overconfident explanations
+- Missing assumptions in generated code
+- Inconsistent handling of ambiguous requirements
+
+My main takeaway is that AI should be treated as a collaborative assistant, not an automatic authority. I now review each output with a checklist: verify facts, test code, and confirm alignment with assignment goals. This process reduced errors and improved confidence in the final submission.

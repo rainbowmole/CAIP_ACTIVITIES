@@ -1,0 +1,14 @@
+Student Submission: Email Classification Mini Project
+
+Name: Marco Dela Rosa
+Course: CAIP 101
+Date: April 25, 2026
+
+In this mini project, I built a rule-based classifier for incoming emails. The script first extracts key terms from the subject and body, then assigns one of three labels: urgent, informational, or follow_up. I used keyword scoring instead of machine learning to keep the pipeline transparent and easy to debug.
+
+Tested on 30 sample emails:
+- Correct classifications: 25
+- Incorrect classifications: 5
+- Accuracy: 83.3 percent
+
+The most common error happened when emails were polite but still urgent, such as requests without explicit urgent words. As a next step, I will improve detection by adding phrase patterns like "by end of day" and "as soon as possible."

@@ -1,0 +1,24 @@
+Technical Report: Pilot Deployment of a Campus Helpdesk Automation Workflow
+
+Author: Systems Integration Team
+Date: April 25, 2026
+
+This report documents the design, deployment, and evaluation of a pilot automation workflow for a campus helpdesk. The project goal was to reduce average response time for repetitive support tickets while preserving service quality for complex requests. The pilot was implemented over four weeks and focused on three ticket categories: password reset, account activation, and portal access troubleshooting.
+
+System Architecture
+The workflow used a lightweight intake parser, a rules engine, and an escalation queue. Incoming requests from email were normalized into structured fields: requester role, issue type, urgency signals, and required action. The rules engine mapped known issue patterns to predefined response templates and validation steps. Tickets with confidence below a threshold were routed to staff for manual review. All actions were logged for auditing and later analysis.
+
+Implementation Approach
+We first developed a baseline using historic ticket samples to identify recurring language patterns. Next, we created deterministic rules for classification, then added deadline extraction for statements such as "by Friday" or "before 5 PM." A separate component flagged urgency terms in subject lines and body text. The system was integrated with the existing ticket board through a small API adapter and tested in a restricted environment before live use.
+
+Evaluation Metrics
+Four primary metrics were tracked: average first response time, automated resolution rate, escalation rate, and user satisfaction score. Baseline first response time was 9.4 hours. During the pilot, this dropped to 2.1 hours for supported ticket categories. Automated resolution reached 68 percent, while 32 percent of tickets were escalated due to missing context, contradictory details, or low classification confidence. Satisfaction scores improved from 3.8 to 4.3 out of 5.
+
+Observed Challenges
+Three risks emerged. First, ambiguous requests reduced automation effectiveness, especially when students submitted one-line messages without account identifiers. Second, urgency language varied significantly by user group, requiring broader keyword coverage and phrase normalization. Third, template responses occasionally sounded repetitive, which affected perceived personalization.
+
+Recommendations
+For the next phase, we recommend adding entity extraction for account identifiers, improving multilingual phrase support, and introducing adaptive response templates with controlled variation. We also recommend a weekly quality review that samples automated outcomes and compares them to human-reviewed resolutions.
+
+Conclusion
+The pilot demonstrates that targeted automation can materially reduce response time while maintaining acceptable service quality. The current rule-based approach is practical, transparent, and easy to audit. With incremental improvements in input quality handling and language coverage, the workflow can scale to additional ticket categories in the next academic term.
